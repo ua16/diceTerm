@@ -23,6 +23,7 @@ quotes = [
         "Courage is found in unlikely places. - The Return of The King",
         "There is one rule, above all others, for being a man. Whatever comes, face it on your feet. - The Great Hunt (The Wheel of Time)", 
         "The most important step a man can take. It’s not the first one, is it? It’s the next one. Always the next step. - Oathbringer (The Stormlight Archive)",
+        "Fantasy is hardly an escape from reality. It's a way of understanding it. - Lloyd Alexander"
         ]
 
 
@@ -34,6 +35,8 @@ style = Style.from_dict({
 history = InMemoryHistory()
 
 run = True
+
+print(random.choice(quotes))
 
 while run:
     user_input = prompt('> ', style=style, history=history)
